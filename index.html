@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Twitch Subscribe Form integrates with Azure and Courier" />
+        <meta name="author" content="LaRena Iocco" />
+        <title>Twitch Subscribe</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <div>
+                Interested in the work I'm doing as a developer?
+                <br/>
+                Sign up to be notified when I go live on Twitch!
+            </div>
+            <form id="twitch-form" method="POST">
+                <label for="sub-name">Name:</label>
+                <input 
+                    id="sub-name" 
+                    type="text" 
+                    name="name" 
+                    placeholder="required"
+                    required="required" />
+                <br/>
+                <label for="sub-email">Email:</label>
+                <input 
+                    id="sub-email"
+                    type="text"
+                    name="email"
+                    placeholder="required"
+                    required="required" />
+                <br/>
+                <div>Get notified by:</div>
+                <label for="email-checkbox">Email</label>
+                <input
+                    class="sub-method"
+                    id="email-checkbox"
+                    type="checkbox"
+                    name="Email"/>
+                <!-- LOOKUP DEFAULT CHECKMARK! -->
+                <label for="sms-checkbox">SMS/Text</label>
+                <input
+                    class="sub-method"
+                    id="sms-checkbox"
+                    type="checkbox"
+                    name="SMS" />
+                <div id="sub-phone-div">
+                    <label for="sub-phone">Phone:</label>
+                    <input 
+                        id="sub-phone"
+                        type="number"
+                        name="phone"
+                        placeholder="optional"/>
+                    <div>(10 digit area code and phone number)</div>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div>
+                <a href="https://LaRenaiocco.github.io">Back to LaRena's Homepage</a>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/submit.js"></script>
+    </body>
+</html>
