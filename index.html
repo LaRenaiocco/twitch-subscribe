@@ -6,7 +6,6 @@
         <meta name="description" content="Twitch Subscribe Form integrates with Azure and Courier" />
         <meta name="author" content="LaRena Iocco" />
         <title>Twitch Subscribe</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -22,48 +21,50 @@
                 <br/>
                 Sign up to be notified when I go live on Twitch!
             </div>
-            <form id="twitch-form" method="POST">
-                <label for="sub-name">Name:</label>
-                <input 
-                    id="sub-name" 
-                    type="text" 
-                    name="name" 
-                    placeholder="required"
-                    required="required" />
-                <br/>
-                <label for="sub-email">Email:</label>
-                <input 
-                    id="sub-email"
-                    type="text"
-                    name="email"
-                    placeholder="required"
-                    required="required" />
-                <br/>
-                <div>Get notified by:</div>
-                <label for="email-checkbox">Email</label>
-                <input
-                    class="sub-method"
-                    id="email-checkbox"
-                    type="checkbox"
-                    name="Email"/>
-                <!-- LOOKUP DEFAULT CHECKMARK! -->
-                <label for="sms-checkbox">SMS/Text</label>
-                <input
-                    class="sub-method"
-                    id="sms-checkbox"
-                    type="checkbox"
-                    name="SMS" />
-                <div id="sub-phone-div">
-                    <label for="sub-phone">Phone:</label>
+            <div id="form-div">
+                <form id="twitch-form" method="POST">
+                    <label for="sub-name">Name:</label>
                     <input 
-                        id="sub-phone"
-                        type="number"
-                        name="phone"
-                        placeholder="optional"/>
-                    <div>(10 digit area code and phone number)</div>
-                </div>
-                <button type="submit">Subscribe</button>
-            </form>
+                        id="sub-name" 
+                        type="text" 
+                        name="name" 
+                        placeholder="required"
+                        required="required" />
+                    <br/>
+                    <label for="sub-email">Email:</label>
+                    <input 
+                        id="sub-email"
+                        type="text"
+                        name="email"
+                        placeholder="required"
+                        required="required" />
+                    <br/>
+                    <div>Get notified by:</div>
+                    <label for="email-checkbox">Email</label>
+                    <input
+                        class="sub-method"
+                        id="email-checkbox"
+                        type="checkbox"
+                        name="Email"/>
+                    <!-- LOOKUP DEFAULT CHECKMARK! -->
+                    <label for="sms-checkbox">SMS/Text</label>
+                    <input
+                        class="sub-method"
+                        id="sms-checkbox"
+                        type="checkbox"
+                        name="SMS" />
+                    <div id="sub-phone-div">
+                        <label for="sub-phone">Phone:</label>
+                        <input 
+                            id="sub-phone"
+                            type="number"
+                            name="phone"
+                            placeholder="optional"/>
+                        <div>(10 digit area code and phone number)</div>
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
             <div>
                 <a href="https://LaRenaiocco.github.io">Back to LaRena's Homepage</a>
             </div>
