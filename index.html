@@ -39,25 +39,27 @@
                         placeholder="required"
                         required="required" />
                     <br/>
-                    <div>Get notified by:</div>
+                    <div>I prefer to be notified by:</div>
                     <label for="email-checkbox">Email</label>
                     <input
                         class="sub-method"
-                        id="email-checkbox"
-                        type="checkbox"
-                        name="Email"/>
-                    <!-- LOOKUP DEFAULT CHECKMARK! -->
+                        id="email-radio"
+                        type="radio"
+                        name="subradio"/>
                     <label for="sms-checkbox">SMS/Text</label>
                     <input
                         class="sub-method"
-                        id="sms-checkbox"
-                        type="checkbox"
-                        name="SMS" />
+                        id="sms-radio"
+                        type="radio"
+                        name="subradio" />
                     <div id="sub-phone-div">
                         <label for="sub-phone">Phone:</label>
                         <input 
                             id="sub-phone"
-                            type="number"
+                            type="tel"
+                            pattern="[0-9]{10}"
+                            minlength="10"
+                            maxlength="10"
                             name="phone"
                             placeholder="optional"/>
                         <div>(10 digit area code and phone number)</div>
